@@ -1,0 +1,368 @@
+body p,
+body span,
+body li,
+body a {
+  letter-spacing: 0.04rem;
+}
+
+body .header {
+  padding: 20px 0;
+}
+
+body .header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header__logo img {
+  height: 90px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .header__menu ul {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .header__menu ul li {
+  list-style: none;
+  padding-right: 25px;
+}
+
+body .header__menu ul li:last-child {
+  padding-right: 0;
+}
+
+body .header__menu ul li a {
+  color: #0e1c27;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .header__menu ul li a:hover {
+  opacity: 0.6;
+}
+
+body .header__menu ul li a.active {
+  color: #229bc7;
+}
+
+body .main__bannerprincipal {
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+body .main__bannerprincipal-video {
+  z-index: 1;
+}
+
+body .main__bannerprincipal-titulo {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
+}
+
+body .main__bannerprincipal-titulo h1 {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 4.5rem;
+}
+
+body .main__bannerprincipal-titulo hr {
+  border-top: 4px solid #229bc7;
+  width: 200px;
+  opacity: 1;
+}
+
+body .main__bannerprincipal-titulo p {
+  width: 40%;
+  padding-top: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body .main__bannerprincipal-overlay {
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#0e1c278a), to(#0e1c27));
+  background: linear-gradient(to bottom, transparent, #0e1c278a, #0e1c27);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body .main__subsidiarias {
+  background-color: #0e1c27;
+  position: relative;
+  padding: 0 0 2.5rem 0;
+}
+
+body .main__subsidiarias .container {
+  max-width: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+}
+
+body .main__subsidiarias-caja {
+  height: 500px;
+  width: 50%;
+  z-index: 2;
+  padding: 2.5rem 2rem;
+  position: relative;
+  -webkit-box-shadow: 5px 6px 25px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+body .main__subsidiarias-caja:hover .main__subsidiarias-caja__overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#0e1c2726), to(#0e1c27));
+  background: linear-gradient(to bottom, transparent, #0e1c2726, #0e1c27);
+}
+
+body .main__subsidiarias-caja:hover .main__subsidiarias-caja__logo {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .main__subsidiarias-caja:hover .main__subsidiarias-caja__titulo {
+  opacity: 0.5;
+}
+
+body .main__subsidiarias-caja__titulo {
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__subsidiarias-caja__titulo h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+body .main__subsidiarias-caja__titulo hr {
+  border-top: 4px solid #229bc7;
+  width: 70px;
+  opacity: 1;
+}
+
+body .main__subsidiarias-caja__logo {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__subsidiarias-caja__logo img {
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .main__subsidiarias-caja__logo button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+body .main__subsidiarias-caja__logo button hr {
+  border-top: 4px solid #229bc7;
+  width: 35px;
+  opacity: 1;
+}
+
+body .main__subsidiarias-caja:first-child {
+  background-image: url("../Img/los-cocos-22-3.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+body .main__subsidiarias-caja:last-child {
+  background-image: url("../Img/Foto-Panoramica-scaled.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+body .main__subsidiarias-caja .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+body .main__subsidiarias-caja__overlay {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__subsidiarias-barrablanca {
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+  bottom: 0;
+  height: 150px;
+  position: absolute;
+  left: 0;
+}
+
+body .main__contacto {
+  padding: 5rem 0;
+  position: relative;
+}
+
+body .main__contacto .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-width: 960px;
+}
+
+body .main__contacto-mapa {
+  width: 50%;
+  z-index: 2;
+}
+
+body .main__contacto-info {
+  z-index: 2;
+  width: 50%;
+  padding: 0 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  color: #0e1c27;
+}
+
+body .main__contacto-info__titulo h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+body .main__contacto-info__titulo hr {
+  border-top: 4px solid #229bc7;
+  width: 55px;
+  opacity: 1;
+}
+
+body .main__contacto-info__correo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main__contacto-info__correo i {
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #dedede;
+}
+
+body .main__contacto-info__correo p {
+  margin-bottom: 0;
+}
+
+body .main__contacto-iconbg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+body .main__contacto-iconbg i {
+  font-size: 25rem;
+  color: #eeeeee60;
+}
+
+body footer {
+  background-color: #dedede;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem 0;
+  background-color: #0e1c27;
+}
+
+body footer p {
+  margin-bottom: 0;
+  color: #fff;
+}
+/*# sourceMappingURL=estilos.css.map */

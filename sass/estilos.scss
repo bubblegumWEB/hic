@@ -128,6 +128,7 @@ body {
         padding: 2.5rem 2rem;
         position: relative;
         box-shadow: 5px 6px 25px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
         &:hover {
           .main__subsidiarias-caja__overlay {
             background: linear-gradient(
@@ -207,6 +208,75 @@ body {
           height: 100%;
           top: 0;
           transition: 0.5s;
+        }
+        &__moreinfo {
+          position: absolute;
+          z-index: 4;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color-dark-black;
+          overflow-y: scroll;
+          padding: 3rem 0;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          &-logo {
+            img {
+              width: 100%;
+              height: 45px;
+              object-fit: contain;
+            }
+            hr {
+              border-top: 4px solid $primary;
+              width: 50px;
+              opacity: 1;
+              margin: auto;
+              transform: translateY(15px);
+            }
+          }
+          &-info {
+            padding: 2.5rem 1.5rem;
+            text-align: left;
+            p {
+              color: #dedede;
+            }
+            a {
+              padding-top: 1rem;
+              text-decoration: none;
+              color: #dedede;
+              display: flex;
+              justify-content: center;
+              padding: 0.35rem 0.75rem;
+              background-color: $primary;
+              color: $color-dark-black;
+              font-weight: bold;
+              transition: 0.5s;
+              &:hover {
+                background-color: #dedede;
+                color: $color-dark-black;
+              }
+              i {
+                color: $color-dark-black;
+                display: flex;
+                align-items: center;
+                padding-right: 0.35rem;
+                transform: translateY(1px);
+              }
+            }
+          }
+          &-botoncerrar {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: transparent;
+            border: 0;
+            i {
+              color: #dedede;
+              font-size: 1.35rem;
+            }
+          }
         }
       }
       &-barrablanca {

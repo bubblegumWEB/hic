@@ -456,4 +456,68 @@ body footer p {
   margin-bottom: 0;
   color: #fff;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                            ADAPTACION RESPONSIVE                           */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .header__logo img {
+    height: 55px;
+  }
+  body .header__menu ul li {
+    padding-right: 10px;
+  }
+  body .header__menu ul li a {
+    font-size: 0.85rem;
+  }
+  body .main__bannerprincipal {
+    height: 500px;
+  }
+  body .main__bannerprincipal-video {
+    height: 500px;
+    width: auto;
+  }
+  body .main__bannerprincipal-titulo {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body .main__bannerprincipal-titulo h1 {
+    font-size: 2rem;
+  }
+  body .main__bannerprincipal-titulo p {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+  body .main__subsidiarias .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  body .main__subsidiarias-caja {
+    width: 100%;
+  }
+  body .main__contacto {
+    padding: 2rem 0;
+  }
+  body .main__contacto .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main__contacto-mapa, body .main__contacto-info {
+    width: 95%;
+  }
+  body .main__contacto-info {
+    padding-top: 1.5rem;
+  }
+  body .footer {
+    padding: 1.5rem 2rem;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */

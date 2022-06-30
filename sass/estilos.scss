@@ -359,3 +359,80 @@ body {
     }
   }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                            ADAPTACION RESPONSIVE                           */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+  body {
+    overflow-x: hidden;
+    // HEADER
+    .header {
+      &__logo {
+        img {
+          height: 55px;
+        }
+      }
+      &__menu {
+        ul {
+          li {
+            padding-right: 10px;
+            a {
+              font-size: 0.85rem;
+            }
+          }
+        }
+      }
+    }
+    // MAIN
+    .main {
+      // BANNER PRINCIPAL
+      &__bannerprincipal {
+        height: 500px;
+        &-video {
+          height: 500px;
+          width: auto;
+        }
+        &-titulo {
+          transform: translateY(0);
+          h1 {
+            font-size: 2rem;
+          }
+          p {
+            width: 90%;
+            font-size: 0.85rem;
+          }
+        }
+      }
+      // SUBSIDIARIAS
+      &__subsidiarias {
+        .container {
+          flex-direction: column;
+          padding: 0;
+        }
+        &-caja {
+          width: 100%;
+        }
+      }
+      // CONTACTO
+      &__contacto {
+        padding: 2rem 0;
+        .container {
+          flex-direction: column;
+        }
+        &-mapa,
+        &-info {
+          width: 95%;
+        }
+        &-info {
+          padding-top: 1.5rem;
+        }
+      }
+    }
+    // FOOTER
+    .footer {
+      padding: 1.5rem 2rem;
+    }
+  }
+}

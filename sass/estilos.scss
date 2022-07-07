@@ -9,12 +9,14 @@ body {
   }
 
   $primary: #229bc7;
+  $primaryfondo: #152b37;
   $color-dark-black: #0e1c27;
   $color-dark-absolute: #000;
 
   //   HEADER
   .header {
     padding: 20px 0;
+    background-color: $primaryfondo;
     .container {
       display: flex;
       justify-content: space-between;
@@ -42,6 +44,7 @@ body {
             text-decoration: none;
             text-transform: uppercase;
             transition: 0.5s;
+            color: #fff;
             &:hover {
               opacity: 0.6;
             }
@@ -74,7 +77,6 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        transform: translateY(75px);
         h1 {
           color: #fff;
           font-weight: 500;
@@ -331,6 +333,10 @@ body {
           }
           p {
             margin-bottom: 0;
+            a {
+              text-decoration: none;
+              color: $color-dark-absolute;
+            }
           }
         }
       }

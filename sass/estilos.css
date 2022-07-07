@@ -91,6 +91,8 @@ body .main__bannerprincipal-titulo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 body .main__bannerprincipal-titulo h1 {
@@ -112,10 +114,14 @@ body .main__bannerprincipal-titulo p {
   padding-top: 20px;
   color: #fff;
   text-transform: uppercase;
+  font-size: 1.25rem;
 }
 
 body .main__bannerprincipal-overlay {
   z-index: 2;
+  -moz-background: linear-gradient(to bottom, transparent, #0e1c278a, #0e1c27);
+  -webkit-background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#0e1c278a), to(#0e1c27));
+  -webkit-background: linear-gradient(to bottom, transparent, #0e1c278a, #0e1c27);
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#0e1c278a), to(#0e1c27));
   background: linear-gradient(to bottom, transparent, #0e1c278a, #0e1c27);
   position: absolute;
